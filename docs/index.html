@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Rist - Security Researcher & Red Teamer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 0.5rem;
+        }
+        .skill-tag {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            margin: 0.2rem;
+            font-size: 0.9rem;
+        }
+        .writeup {
+            margin: 1rem 0;
+            padding: 1rem;
+            border-left: 3px solid #e74c3c;
+            background: #f9f9f9;
+        }
+        .writeup h3 {
+            color: #1a1a2e;
+            margin-bottom: 0.3rem;
+        }
+        .writeup h3 a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        .writeup h3 a:hover {
+            text-decoration: underline;
+        }
+        .writeup .date {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .project {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .project h3 {
+            color: #1a1a2e;
+        }
+        .project a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+        footer a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tobias Rist</h1>
+        <p>Security Researcher & Red Teamer</p>
+        <p>Zurich, Switzerland</p>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>About</h2>
+            <p>
+                I'm a security researcher specializing in Active Directory, Azure AD, and container security.
+                My work focuses on identifying attack paths in modern enterprise environments and developing
+                detection strategies for red team operations. I write detailed technical write-ups of my
+                research and build tools to automate common security testing tasks.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Expertise</h2>
+            <div>
+                <span class="skill-tag">Active Directory</span>
+                <span class="skill-tag">Kerberos</span>
+                <span class="skill-tag">Azure AD</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">BloodHound</span>
+                <span class="skill-tag">Impacket</span>
+                <span class="skill-tag">PowerShell</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Container Security</span>
+                <span class="skill-tag">Cloud Security</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Recent Write-ups</h2>
+            <div class="writeup">
+                <h3><a href="https://github.com/Tobiasris/security-portfolio/blob/main/writeups/ad-acl-abuse-2024.md">Active Directory ACL Abuse: From Helpdesk to Domain Admin</a></h3>
+                <p class="date">November 2024</p>
+                <p>A detailed walkthrough of escalating from a low-privileged helpdesk account to Domain Admin using AD ACL misconfigurations, including GenericAll abuse and RDP access.</p>
+            </div>
+            <div class="writeup">
+                <h3><a href="https://github.com/Tobiasris/security-portfolio/blob/main/writeups/shadow-credentials-attack.md">Shadow Credentials: Taking Over AD Accounts Without Password Resets</a></h3>
+                <p class="date">October 2024</p>
+                <p>Exploiting the msDS-KeyCredentialLink attribute to authenticate via PKINIT without knowing the target's password — a stealthier alternative to traditional password resets.</p>
+            </div>
+            <div class="writeup">
+                <h3><a href="https://github.com/Tobiasris/security-portfolio/blob/main/writeups/azure-ad-cross-tenant.md">Azure AD Privilege Escalation via Cross-Tenant Trust</a></h3>
+                <p class="date">September 2024</p>
+                <p>Abusing cross-tenant trust relationships in Azure AD to escalate privileges across organizational boundaries.</p>
+            </div>
+            <div class="writeup">
+                <h3><a href="https://github.com/Tobiasris/security-portfolio/blob/main/writeups/ad-kerberoasting-2024.md">Active Directory Kerberoasting in Modern Environments</a></h3>
+                <p class="date">September 2024</p>
+                <p>A practical guide to Kerberoasting attacks, including detection and mitigation strategies for modern AD environments.</p>
+            </div>
+            <div class="writeup">
+                <h3><a href="https://github.com/Tobiasris/security-portfolio/blob/main/writeups/k8s-container-escape.md">Container Escape: Kubernetes Pod to Host</a></h3>
+                <p class="date">August 2024</p>
+                <p>Exploiting misconfigured Kubernetes pods to escape to the host and gain broader access.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Projects & Tools</h2>
+            <div class="project">
+                <h3><a href="https://github.com/Tobiasris/security-portfolio/tree/main/projects/adrecon">ADRecon</a></h3>
+                <p>A PowerShell-based Active Directory reconnaissance toolkit for gathering domain information, identifying misconfigurations, and discovering potential attack paths.</p>
+            </div>
+            <div class="project">
+                <h3><a href="https://github.com/Tobiasris/security-portfolio/tree/main/tools/kerberos-attack">Kerberos Attack Toolkit</a></h3>
+                <p>A collection of scripts for performing Kerberos-based attacks including AS-REP roasting, Kerberoasting, and hash extraction.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Connect</h2>
+            <p>
+                <a href="https://github.com/Tobiasris">GitHub</a> |
+                <a href="mailto:tobias@tobiasris.ch">Email</a> |
+                <a href="https://tobiasris.ch">Website</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tobias Rist. All rights reserved.</p>
+    </footer>
+</body>
+</html>
