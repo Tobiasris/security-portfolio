@@ -8,6 +8,7 @@ Security researcher specializing in offensive security operations and red team e
 
 ## Recent Write-ups
 
+- [Azure AD Attack Techniques for Red Team Operations](writeups/azure-ad-attack-techniques.md)
 - [Active Directory ACL Abuse: From Helpdesk to Domain Admin](writeups/ad-acl-abuse-2024.md)
 - [Shadow Credentials: Taking Over AD Accounts Without Password Resets](writeups/shadow-credentials-attack.md)
 - [Azure AD Privilege Escalation via Cross-Tenant Trust](writeups/azure-ad-cross-tenant.md)
