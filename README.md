@@ -30,5 +30,6 @@ Active researcher on HackerOne and Bugcrowd. Focus on cloud infrastructure and i
 ## Contact
 
 - GitHub: [@Tobiasris](https://github.com/Tobiasris)
-- Email: tobiasris@protonmail.com
+- Email: tobias@solarevo.ch
 - Website: [tobiasris.ch](https://tobiasris.ch)
+- Location: Basel, Switzerland
